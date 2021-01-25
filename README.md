@@ -1,28 +1,14 @@
-# TypeScript & Styled Components Next.js example
+# Coding Challenge
+ 
+- I decided to use Next.js because it is a very nice react framework, with a variety of templates to get things started fast. Also can be
+    used to render the first content in the server.
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+- For styling I choose styled-components, just because I like it, it is simple and I like to have my components clean.
 
-## Deploy your own
+- React-query to help me cache, fetch and mutate. Also I can control the refecth time.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### Problems I faced
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components&project-name=with-typescript-styled-components&repository-name=with-typescript-styled-components)
+- The twitter api do not let you access with ease, so I created my own api with Next.js at api/tweets and used Twit library for Node.js to
+    interact with Twitter's api.
 
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-styled-components
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-styled-components
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This is an amalgamation of the 2 existing examples:
-
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
