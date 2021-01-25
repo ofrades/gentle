@@ -1,8 +1,8 @@
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 const queryClient = new QueryClient();
-import Tweets from './../components/Tweets/index';
-import { getTweets } from './../services/tweet';
+import Tweets from '../components/Tweets/index';
+import { getTweets } from '../services/tweets';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle, { theme } from './../styles/globalStyles.js';
 
