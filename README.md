@@ -12,3 +12,9 @@
 - The twitter api do not let you access with ease, so I created my own api with Next.js at api/tweets and used Twit library for Node.js to
     interact with Twitter's api.
 
+### To run
+ - Clone the repository
+ - Install the dependencies with `yarn`
+ - Get the tokens and keys from [twitter](https://developer.twitter.com/en/portal/projects-and-apps) or ask me for the `.env`
+ - Run `yarn dev`
+
