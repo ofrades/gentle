@@ -13,7 +13,7 @@
 - I decided to use Next.js because it is a very nice react framework, with a variety of templates to get things started fast. Also can be
     used to render the first content in the server.
 
-- For styling I choose styled-components, just because I like it, it is simple and I like to have my components clean. In a different situation, with more components and bigger complexity the library I probably choose is the material ui, especially now, with 5.0 and the styled api implemented natively.
+- For styling I choose styled-components, just because I like it, it is simple and I like to have my components clean. In a different situation, with more components and bigger complexity the library I probably have chosen was the material UI, especially now, with 5.0 coming and the styled API implemented natively.
 
 - React-query to help me cache, fetch and mutate. Also, to control the refecth time.
 
