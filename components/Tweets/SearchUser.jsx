@@ -1,5 +1,6 @@
 import { Search, LoadingIcon } from './styles';
 import { RiSearchEyeLine, RiLoaderLine } from 'react-icons/ri';
+
 const SearchUser = ({ isLoading, isFetching, user, handleChange }) => {
   return (
     <Search>
@@ -17,4 +18,5 @@ const SearchUser = ({ isLoading, isFetching, user, handleChange }) => {
     </Search>
   );
 };
+
 export default SearchUser;
