@@ -6,8 +6,10 @@
 - [x] Search twitter user
 - [x] Displays tweets
 - [x] Add refetching every 1 minute
-- [] Tests
+- [x] Tests
  
+## Decisions
+
 - I decided to use Next.js because it is a very nice react framework, with a variety of templates to get things started fast. Also can be
     used to render the first content in the server.
 
