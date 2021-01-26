@@ -19,11 +19,11 @@ const Tweets = ({ data }) => {
           <RiShareFill /> {data.retweet_count}
         </Love>
         {data.entities.urls.find((e) => e.url) && (
-          <Link href={data.entities.urls.map((e) => e.url)}>
+          <a href={data.entities.urls.map((e) => e.url)}>
             <span>
               Open tweet <RiLinksFill />{' '}
             </span>
-          </Link>
+          </a>
         )}
         <p>{data.created_at.split('+')[0]}</p>
       </Footer>

@@ -190,6 +190,13 @@ export const Footer = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   color: ${(props) => props.theme.colors.dark};
   border-bottom: 3px solid ${(props) => props.theme.colors.secondary};
+  > a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.dark};
+    :hover {
+      color: ${(props) => props.theme.colors.primary};
+    }
+  }
   > span {
     cursor: pointer;
     :hover {
