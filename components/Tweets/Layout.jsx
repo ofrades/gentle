@@ -20,7 +20,7 @@ import { RiAddLine, RiSubtractLine, RiUserLine } from 'react-icons/ri';
 const Layout = ({ tweets }) => {
   const [user, setUser] = useState('subvisual');
   const [query, setQuery] = useState(user);
-  const [countTweets, setCountTweets] = useState(5);
+  const [numTweets, setNumTweets] = useState(5);
 
   const handleChange = (e) => {
     setUser(e.target.value);
@@ -28,7 +28,7 @@ const Layout = ({ tweets }) => {
 
   const { data, isLoading, isFetching, refetch } = useQuery(
     ['user', query],
-    () => getTweets(user, countTweets),
+    () => getTweets(user, numTweets),
     { initialData: tweets, refetchInterval: 60000 }
   );
 
@@ -39,9 +39,9 @@ const Layout = ({ tweets }) => {
     return () => clearTimeout(delayDebounceFn);
   }, [user]);
   useEffect(() => {
-    setCountTweets(countTweets);
+    setNumTweets(numTweets);
     refetch();
-  }, [countTweets]);
+  }, [numTweets]);
 
   return (
     <Container>
@@ -88,8 +88,8 @@ const Layout = ({ tweets }) => {
           )}
           {data?.length > 0 && (
             <Count>
-              <RiSubtractLine onClick={() => setCountTweets(countTweets - 1)} />
-              <RiAddLine onClick={() => setCountTweets(countTweets + 1)} />
+              <RiSubtractLine onClick={() => setNumTweets(numTweets - 1)} />
+              <RiAddLine onClick={() => setNumTweets(numTweets + 1)} />
             </Count>
           )}
         </Content>
