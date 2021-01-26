@@ -27,8 +27,8 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
+  max-width: 94%;
   height: 50%;
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
 `;
