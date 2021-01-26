@@ -7,6 +7,8 @@
     "extends": [
         "airbnb",
         "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,6 +20,7 @@
     "plugins": [
         "react",
         "prettier",
+        "jsx-a11y"
     ],
     "rules": {
         "prettier/prettier": ["error"]
