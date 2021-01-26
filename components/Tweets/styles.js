@@ -63,7 +63,8 @@ export const Text = styled.div`
 
 export const Love = styled.div`
   svg {
-    color: ${(props) => props.theme.colors.red};
+    color: ${(props) => props.theme.colors.primary};
+    padding-left: 0.75rem;
   }
 `;
 
@@ -182,7 +183,8 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-family: ${(p) => p.theme.fonts.sans};
   font-weight: bold;
   background-color: ${(props) => props.theme.colors.white};
@@ -190,10 +192,12 @@ export const Footer = styled.div`
   border-bottom: 3px solid ${(props) => props.theme.colors.secondary};
   > span {
     cursor: pointer;
-    padding: 0.2rem 1rem 0.2rem 1rem;
     :hover {
-      color: ${(props) => props.theme.colors.grey};
-      background-color: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.primary};
+    }
+    > svg {
+      padding-left: 0.5rem;
+      font-size: 0.7rem;
     }
   }
 `;

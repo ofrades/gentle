@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { Tweet, Text, Love, Footer } from './styles';
-import { RiHeartFill, RiLinksLine, RiTwitterFill } from 'react-icons/ri';
+import {
+  RiHeartFill,
+  RiLinksFill,
+  RiTwitterFill,
+  RiShareFill,
+} from 'react-icons/ri';
 
 const Tweets = ({ data }) => {
   return (
@@ -11,15 +16,16 @@ const Tweets = ({ data }) => {
       <Footer>
         <Love>
           <RiHeartFill /> {data.favorite_count}
+          <RiShareFill /> {data.retweet_count}
         </Love>
         {data.entities.urls.find((e) => e.url) && (
           <Link href={data.entities.urls.map((e) => e.url)}>
             <span>
-              Open link <RiLinksLine />{' '}
+              Open tweet <RiLinksFill />{' '}
             </span>
           </Link>
         )}
-        <span>{data.created_at.split('+')[0]}</span>
+        <p>{data.created_at.split('+')[0]}</p>
       </Footer>
     </Tweet>
   );
