@@ -54,7 +54,7 @@ export const Text = styled.div`
   margin-bottom: 0.5rem;
   font-family: ${(p) => p.theme.fonts.sans};
   font-style: italic;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.dark};
   > svg {
     color: ${(props) => props.theme.colors.primary};
     font-size: 2rem;
@@ -188,7 +188,7 @@ export const Footer = styled.div`
   font-family: ${(p) => p.theme.fonts.sans};
   font-weight: bold;
   background-color: ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.dark};
   border-bottom: 3px solid ${(props) => props.theme.colors.secondary};
   > span {
     cursor: pointer;
