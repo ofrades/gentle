@@ -18,7 +18,7 @@ import { getTweets } from '../../services/tweets';
 import { RiAddLine, RiSubtractLine, RiUserLine } from 'react-icons/ri';
 
 const Layout = ({ tweets }) => {
-  const [user, setUser] = useState('subvisual');
+  const [user, setUser] = useState(tweets?.user?.name);
   const [query, setQuery] = useState(user);
   const [numTweets, setNumTweets] = useState(5);
 

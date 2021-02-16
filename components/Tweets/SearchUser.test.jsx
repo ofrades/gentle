@@ -11,9 +11,9 @@ describe('search input tests', () => {
     const input = screen.getByRole('textbox');
     expect(input.value).toBe('');
     fireEvent.change(input, {
-      target: { value: 'subvisual' },
+      target: { value: 'nextofficial' },
     });
-    expect(input.value).toBe('subvisual');
+    expect(input.value).toBe('nextofficial');
     waitFor(() => expect(onChange).toHaveBeenCalledTimes(1));
   });
 });

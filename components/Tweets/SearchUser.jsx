@@ -7,7 +7,7 @@ const SearchUser = ({ isLoading, isFetching, user, handleChange }) => {
       <input
         placeholder={user || 'Search Twitter User'}
         onChange={handleChange}
-      />
+        />
       {isLoading || isFetching ? (
         <LoadingIcon>
           <RiLoaderLine />
